@@ -1,0 +1,7 @@
+<br/>
+<br/>
+<%= link_to 'Write a New email', new_message_path %>
+<br/>
+<br/>
+Messages: <%= link_to("Inbox", messages_url) %> | <%= link_to("Sent", messages_url(:sent => true)) %>
+<%= render :partial => "inbox_list" %>

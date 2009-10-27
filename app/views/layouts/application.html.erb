@@ -1,0 +1,7 @@
+<% if logged_in? %>
+  <%= link_to("Home", "/") %>
+  <%= link_to("Logout", logout_url) %>
+<% else %>
+  <%= link_to("Sign Up", signup_url) %>
+<% end %>
+<%= yield %>

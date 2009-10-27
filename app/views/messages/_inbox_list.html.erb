@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th align="left">Time:</th>
+    <th>From:</th>
+    <th>Subject:</th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr bgcolor="#DCDCDC">
+    <td><%= link_to(h(message.created_at.strftime("%A %B %d, %Y %I:%M %p")), message) %></td>
+    <td><%= link_to(h(User.find(message.from).login), message) %></td>
+    <td><%= link_to(h(message.subject), message) %></td>
+
+    <% if false %>
+      <td><%= link_to 'Show', message %></td>
+      <td><%= link_to 'Edit', edit_message_path(message) %></td>
+      <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
