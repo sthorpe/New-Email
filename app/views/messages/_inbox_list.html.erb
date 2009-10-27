@@ -5,7 +5,11 @@
     <tr>
       <td class="stackleft">
         <!-- Begin sender information -->
+         <% if params[:sent] == "true" %>
+          <span class="sender">you</span> <span class="you">to <%= h(User.find(message.to).login) %></span>
+         <% else %>
           <span class="sender"><%= h(User.find(message.from).login) %></span> <span class="you">to you</span>
+         <% end %>
           <br>
           <span class="datetime"><%= h(message.created_at.strftime("%A %B %d, %Y %I:%M %p")) %></span>
         <!-- End sender information -->
@@ -15,7 +19,7 @@
       <td class="stackright">
 
       <!-- Begin subject and message preview -->
-      <span class="subject"><%= h(message.subject) %></span><br>
+      <span class="subject"><%= link_to(h(message.subject), message) %></span><br>
       <span class="preview"><%= h(message.body) %></span>
       <!-- End subject and message preview -->
 
