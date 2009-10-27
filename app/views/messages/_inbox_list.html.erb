@@ -1,21 +1,34 @@
-<table>
-  <tr>
-    <th align="left">Time:</th>
-    <th>From:</th>
-    <th>Subject:</th>
-  </tr>
+<!-- Begin first stack -->
 
-<% @messages.each do |message| %>
-  <tr bgcolor="#DCDCDC">
-    <td><%= link_to(h(message.created_at.strftime("%A %B %d, %Y %I:%M %p")), message) %></td>
-    <td><%= link_to(h(User.find(message.from).login), message) %></td>
-    <td><%= link_to(h(message.subject), message) %></td>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <% @messages.each do |message| %>
+    <tr>
+      <td class="stackleft">
+        <!-- Begin sender information -->
+          <span class="sender"><%= h(User.find(message.from).login) %></span> <span class="you">to you</span>
+          <br>
+          <span class="datetime"><%= h(message.created_at.strftime("%A %B %d, %Y %I:%M %p")) %></span>
+        <!-- End sender information -->
 
-    <% if false %>
-      <td><%= link_to 'Show', message %></td>
-      <td><%= link_to 'Edit', edit_message_path(message) %></td>
-      <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
-    <% end %>
-  </tr>
-<% end %>
+        <img src="spacer.gif" height="2" width="281">
+      </td>
+      <td class="stackright">
+
+      <!-- Begin subject and message preview -->
+      <span class="subject"><%= h(message.subject) %></span><br>
+      <span class="preview"><%= h(message.body) %></span>
+      <!-- End subject and message preview -->
+
+      </td>
+      <% if false %>
+        <td><%= link_to 'Show', message %></td>
+        <td><%= link_to 'Edit', edit_message_path(message) %></td>
+        <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
+      <% end %>
+    </tr>
+  <% end %>
 </table>
+
+<!-- End first stack -->
+<br/>
+<br/>

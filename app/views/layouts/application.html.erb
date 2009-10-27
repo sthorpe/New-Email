@@ -1,7 +1,11 @@
+<%= stylesheet_link_tag "index" %>
+
 <% if logged_in? %>
   <%= link_to("Home", "/") %>
   <%= link_to("Logout", logout_url) %>
 <% else %>
   <%= link_to("Sign Up", signup_url) %>
 <% end %>
+
+<body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0" style="margin:0;padding:0">
 <%= yield %>

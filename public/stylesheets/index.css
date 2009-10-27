@@ -1,0 +1,62 @@
+.sender {
+color:#000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:bold;
+}
+
+.you {
+color:#000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:normal;
+}
+
+.datetime {
+color:#7b7b7b;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+line-height:100%;
+}
+
+.subject {
+color:#000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:bold;
+}
+
+.preview {
+color:#7b7b7b;
+font-family:Arial;
+font-size:9pt;
+font-weight:normal;
+line-height:100%;
+white-space:pre-wrap !important;
+}
+
+.stackleft { 
+border-top: 1px #ffffff solid; 
+border-left: 0px; 
+border-bottom: 1px #c1c1c1 solid; 
+border-right: 1px #e3e3e3 solid; 
+padding-left:20px; 
+background:#f0f0f0;
+empty-cells:show;
+width:281px;
+height:72px;
+}
+
+.stackright { 
+border-top: 1px #ffffff solid; 
+border-left: 0px; 
+border-right: 1px #ffffff solid; 
+border-bottom: 1px #c1c1c1 solid; 
+padding-left:20px; 
+background:#ffffff;
+empty-cells:show;
+width=100%;
+height=72px;
+min-width:470px;
+}
