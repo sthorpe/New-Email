@@ -5,9 +5,9 @@ class MessagesController < ApplicationController
   # GET /messages.xml
   def index
     if params[:sent] == "true"
-      @messages = Message.find_all_by_user_id(current_user.id)
+      @messages = Message.find_all_by_user_id(current_user.id, :order => 'created_at DESC')
     else
-      @messages = Message.find_all_by_to(current_user.id)
+      @messages = Message.find_all_by_to(current_user.id, :order => 'created_at DESC')
     end
 
     respond_to do |format|
