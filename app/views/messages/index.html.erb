@@ -2,13 +2,13 @@
 
 <script type="text/javascript">
   function show_details(div) {
-    Effect.BlindDown(div);
+    Effect.BlindDown(div, { duration: 0.2 });
     $('hide_details_link').style.display = 'inline';
     $('show_details_link').style.display = 'none';
   }
 
   function hide_details(div) {
-    Effect.BlindUp(div);
+    Effect.BlindUp(div, { duration: 0.2 });
     $('hide_details_link').style.display = 'none';
     $('show_details_link').style.display = 'inline';
   }
