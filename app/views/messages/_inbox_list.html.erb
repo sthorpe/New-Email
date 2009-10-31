@@ -1,10 +1,12 @@
 <!-- Begin first stack -->
-
 <table width="100%" cellpadding="0" cellspacing="0">
   <% @messages.each do |message| %>
     <tr>
       <td class="stackleft">
         <!-- Begin sender information -->
+        <img src="/images/silhouette.gif" style="float:left;margin-right:10px;padding-top:2px;">
+        <img src="/images/arrow-right.gif" style="float:right;margin-right:15px;padding-top:13px;">
+        
          <% if params[:sent] == "true" %>
           <span class="sender">you</span> <span class="you">to <%= h(User.find(message.to).login) %></span>
          <% else %>
@@ -14,13 +16,12 @@
           <span class="datetime"><%= h(message.created_at.strftime("%A %B %d, %Y %I:%M %p")) %></span>
         <!-- End sender information -->
 
-        <img src="spacer.gif" height="2" width="281">
+        <img src="/images/spacer.gif" height="2" width="281">
       </td>
       <td class="stackright">
-
       <!-- Begin subject and message preview -->
-      <span class="subject"><%= link_to(h(message.subject), message) %></span><br>
-      <span class="preview"><%= h(message.body) %></span>
+      <span class="subject"><%= link_to(h(message.subject), "#", :onclick => "Effect.BlindDown('blinddown_#{message.id}',{ duration: 0.2 }); return false;") %></span><br>
+      <span class="preview"><%= h(truncate(message.body, 140, "...")) %></span>
       <!-- End subject and message preview -->
 
       </td>
@@ -30,6 +31,11 @@
         <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
       <% end %>
     </tr>
+    </a>
+      <tr>
+       <td></td>
+       <td class="stackright"><div style="display:none;" id="blinddown_<%= message.id %>"><%= message.body %></div></td>
+      </tr>
   <% end %>
 </table>
 
