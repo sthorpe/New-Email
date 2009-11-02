@@ -1,6 +1,7 @@
 <%= stylesheet_link_tag "index" %>
 
 <% if logged_in? %>
+  <%= current_user.email %>
   <%= link_to("Home", "/") %>
   <%= link_to("Logout", logout_url) %>
 <% else %>
