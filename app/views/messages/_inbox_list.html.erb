@@ -31,12 +31,12 @@
   	<div id="subjectpadding">
   	
 
-  <span class="subject" id="show_details_link" style="display:inline;">
-    <%= link_to(h(message.subject), "#", :onclick => "show_details('blinddown_#{message.id}'); return false;") %>
+  <span class="subject" id="show_details_link_<%= message.id %>" style="display:inline;">
+    <%= link_to(h(message.subject), "#", :onclick => "show_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}'); return false;") %>
   </span>
 
-  <span class="subject" id="hide_details_link" style="display:none;">
-    <%= link_to(h(message.subject), "#", :onclick => "hide_details('blinddown_#{message.id}'); return false;") %>
+  <span class="subject" id="hide_details_link_<%= message.id %>" style="display:none;">
+    <%= link_to(h(message.subject), "#", :onclick => "hide_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}'); return false;") %>
   </span>
   
   <!-- End subject and message preview -->

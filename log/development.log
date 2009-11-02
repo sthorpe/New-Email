@@ -10139,3 +10139,126 @@ Rendering messages/index
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
 Rendered messages/_inbox_list (5.9ms)
 Completed in 33ms (View: 8, DB: 7) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 13:11:45) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (6.3ms)
+Completed in 36ms (View: 10, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 13:26:08) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.9ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (9.3ms)
+Completed in 45ms (View: 17, DB: 7) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 66.92.11.99 at 2009-11-02 13:26:28) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering template within layouts/application
+Rendering messages/new
+Completed in 34ms (View: 11, DB: 5) | 200 OK [http://192.168.1.76/messages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 66.92.11.99 at 2009-11-02 13:27:27) [POST]
+  Parameters: {"message"=>{"body"=>"Einstein’s Cosmic Messengers\r\n\r\nGeek Performance: Einstein’s Cosmic Messengers\r\n\r\n \r\nWhen:\r\n\r\nWednesday, October 21, 2009\r\n6:00–10:00 p.m.\r\nPerformance starts at 7:00 p.m.\r\n\r\n \r\nAbout\r\n\r\nIs that attraction you’re feeling, or just gravity?\r\n\r\n \r\n\r\nCome find out on opening night, when we feature a stunning musical and visual performance by Andrea Centazzo, who creates multimedia experiences that combine live music with video images of gravitational waves and other phenomena.\r\n\r\nThe concert will be preceded by a talk from Michele Vallisneri, a theoretical physicist at NASA’s Jet Propulsion Laboratory, who will impart his firsthand knowledge of the gravitational-wave observatory LIGO and the impact that its measurements have had on our understanding of the universe.\r\n\r\n \r\n\r\nThis event is a collaboration with the Italian Cultural Institute of San Francisco.\r\n\r\n ", "subject"=>"Testing this out again", "to"=>"josh"}, "commit"=>"Send", "authenticity_token"=>"dGnLYZLqDll+x/jbD/dEGSmQ8QuXlihzUe9dlSwXIbQ="}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMessage Create (0.3ms)[0m   [0mINSERT INTO `messages` (`updated_at`, `body`, `from`, `to`, `subject`, `user_id`, `created_at`) VALUES('2009-11-02 21:27:28', 'Einstein’s Cosmic Messengers\r\n\r\nGeek Performance: Einstein’s Cosmic Messengers\r\n\r\n \r\nWhen:\r\n\r\nWednesday, October 21, 2009\r\n6:00–10:00 p.m.\r\nPerformance starts at 7:00 p.m.\r\n\r\n \r\nAbout\r\n\r\nIs that attraction you’re feeling, or just gravity?\r\n\r\n \r\n\r\nCome find out on opening night, when we feature a stunning musical and visual performance by Andrea Centazzo, who creates multimedia experiences that combine live music with video images of gravitational waves and other phenomena.\r\n\r\nThe concert will be preceded by a talk from Michele Vallisneri, a theoretical physicist at NASA’s Jet Propulsion Laboratory, who will impart his firsthand knowledge of the gravitational-wave observatory LIGO and the impact that its measurements have had on our understanding of the universe.\r\n\r\n \r\n\r\nThis event is a collaboration with the Italian Cultural Institute of San Francisco.\r\n\r\n ', 2, 2, 'Testing this out again', 2, '2009-11-02 21:27:28')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages/3
+Completed in 29ms (DB: 6) | 302 Found [http://192.168.1.76/messages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#show (for 66.92.11.99 at 2009-11-02 13:27:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering messages/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Completed in 34ms (View: 10, DB: 5) | 200 OK [http://192.168.1.76/messages/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 13:27:30) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (8.0ms)
+Completed in 35ms (View: 10, DB: 6) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 13:27:41) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (1.6ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (7.8ms)
+Completed in 36ms (View: 9, DB: 8) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 13:28:04) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (8.1ms)
+Completed in 38ms (View: 13, DB: 6) | 200 OK [http://192.168.1.76/]
