@@ -1,6 +1,6 @@
-<div id="container">
 
- <% @messages.each do |message| %>
+<% @messages.each do |message| %>
+<div id="container">
     
   <div id="stackleft">
 
@@ -30,7 +30,7 @@
   <!-- Begin subject and message -->
   	<div id="subjectpadding">
   	
-  <!-- Begin subject and message preview -->
+
   <span class="subject" id="show_details_link" style="display:inline;">
     <%= link_to(h(message.subject), "#", :onclick => "show_details('blinddown_#{message.id}'); return false;") %>
   </span>
