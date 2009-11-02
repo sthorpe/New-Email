@@ -41,7 +41,7 @@
   
   <!-- End subject and message preview -->
   
-  <div id="messagepreview"><%= h(truncate(message.body, 90, "...")) %></div>
+  <div id="messagepreview"><%= h(truncate(message.body, 10, "...")) %></div>
   
   <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;display:none;" id="blinddown_<%= message.id %>">
     <%= message.body %>
