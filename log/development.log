@@ -8996,3 +8996,652 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/zenbox/app/views/messages/_inbox_list.html.erb:31)
 Rendered messages/_inbox_list (9.1ms)
 Completed in 37ms (View: 11, DB: 7) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Mon Nov 02 12:06:27 -0800 2009
+  Status: 500 Internal Server Error
+  Unknown database 'new_email_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Nov 02 12:06:31 -0800 2009
+  Status: 500 Internal Server Error
+  Unknown database 'new_email_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (31.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (60.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (21.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091020002951)
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `name` varchar(100) DEFAULT '', `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime, `activation_code` varchar(40), `activated_at` datetime, `state` varchar(255) DEFAULT 'passive', `deleted_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091020002951')[0m
+Migrating to CreateMessages (20091020004249)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE `messages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `from` int(11), `to` int(11), `subject` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091020004249')[0m
+Migrating to AddColumnUserIdMessages (20091020015917)
+  [4;35;1mSQL (5.5ms)[0m   [0mALTER TABLE `messages` ADD `user_id` int(11)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091020015917')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mdescribe `messages`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW KEYS FROM `messages`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:09:04) [GET]
+Redirected to http://192.168.1.76:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 119ms (DB: 0) | 302 Found [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-11-02 12:09:05) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 52ms (View: 50, DB: 0) | 200 OK [http://192.168.1.76/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-11-02 12:09:11) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (23.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'sthorpe' from 66.92.11.99 at Mon Nov 02 20:09:11 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 126ms (View: 2, DB: 24) | 200 OK [http://192.168.1.76/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-11-02 12:09:17) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg=", "login"=>"sthorpe", "password"=>"test"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'sthorpe' from 66.92.11.99 at Mon Nov 02 20:09:17 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 2, DB: 1) | 200 OK [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 66.92.11.99 at 2009-11-02 12:09:19) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 14, DB: 3) | 200 OK [http://192.168.1.76/signup]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 66.92.11.99 at 2009-11-02 12:09:28) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"testing", "password"=>"testing", "login"=>"sthorpe", "email"=>"sthorpe@gmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg="}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'sthorpe') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'sthorpe@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('', 'd4c30e7d7e16450ab42e42b9972ff916fcd86864', '2009-11-02 20:09:28', NULL, 'c6a415d1975516357aee58e79bf0236789ec8cbc', NULL, NULL, '4aff1c92405c3957055a16917211aa9980ad5b4e', NULL, 'sthorpe', 'sthorpe@gmail.com', '2009-11-02 20:09:28', 'pending')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'sthorpe' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'sthorpe@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `activated_at` = '2009-11-02 20:09:28', `activation_code` = NULL, `state` = 'active', `updated_at` = '2009-11-02 20:09:28' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 392ms (DB: 6) | 302 Found [http://192.168.1.76/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:09:29) [GET]
+Redirected to http://192.168.1.76:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://192.168.1.76/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-11-02 12:09:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-11-02 12:09:35) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 20ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:09:35) [GET]
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (3.1ms)
+Completed in 96ms (View: 14, DB: 7) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 66.92.11.99 at 2009-11-02 12:09:45) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering template within layouts/application
+Rendering messages/new
+Completed in 35ms (View: 12, DB: 5) | 200 OK [http://192.168.1.76/messages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 66.92.11.99 at 2009-11-02 12:10:27) [POST]
+  Parameters: {"message"=>{"body"=>"Admission\r\n\r\nCost $10 ($8 for members & UC Berkeley students)\r\n\r\nClick to purchase tickets.\r\nGet great membership benefits and help support LHS!\r\n\r\n \r\nAbout\r\n\r\nYou know who you are… You think Fantasy Football is even better than the real thing and that a spreadsheet is a perfectly reasonable way to keep track of past relationships.\r\n\r\n \r\n\r\nYou’re already designing an art car for next year’s Burning Man, and you can’t stop talking about the endemic plants of the genus Ipomea that were recently put in to protect the coastal zone near your home.\r\n\r\n \r\n\r\nWell, we’ve got some good news for you: Beginning Wednesday, October 21, it’s time to let your Geek flag fly!\r\n\r\n \r\n\r\nCome to Lawrence Hall of Science, grab a drink and a friend, and get ready for some downright nerdy fun. All events include full access to exhibits, a cash bar, hors d’oeuvres, and of course the best view in the East Bay.\r\n\r\n \r\nOctober 21: Geek Performance\r\nGain unique insights into the mysteries of the universe in this live, multimedia performance by an award-winning artist.\r\n\r\n \r\nNovember 18: Geek Challenge\r\nSee if you’ve got what it takes to survive on Mars, and get a chance to design your own base on the Red Planet.\r\n\r\n \r\nDecember 10: Geek Talk\r\nIs space really the final frontier? Hear from an SETI astronomer about why we must colonize space. ", "subject"=>"This is a test", "to"=>"josh"}, "commit"=>"Send", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg="}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (0.3ms)[0m   [0;1mINSERT INTO `messages` (`updated_at`, `body`, `from`, `to`, `subject`, `user_id`, `created_at`) VALUES('2009-11-02 20:10:27', 'Admission\r\n\r\nCost $10 ($8 for members & UC Berkeley students)\r\n\r\nClick to purchase tickets.\r\nGet great membership benefits and help support LHS!\r\n\r\n \r\nAbout\r\n\r\nYou know who you are… You think Fantasy Football is even better than the real thing and that a spreadsheet is a perfectly reasonable way to keep track of past relationships.\r\n\r\n \r\n\r\nYou’re already designing an art car for next year’s Burning Man, and you can’t stop talking about the endemic plants of the genus Ipomea that were recently put in to protect the coastal zone near your home.\r\n\r\n \r\n\r\nWell, we’ve got some good news for you: Beginning Wednesday, October 21, it’s time to let your Geek flag fly!\r\n\r\n \r\n\r\nCome to Lawrence Hall of Science, grab a drink and a friend, and get ready for some downright nerdy fun. All events include full access to exhibits, a cash bar, hors d’oeuvres, and of course the best view in the East Bay.\r\n\r\n \r\nOctober 21: Geek Performance\r\nGain unique insights into the mysteries of the universe in this live, multimedia performance by an award-winning artist.\r\n\r\n \r\nNovember 18: Geek Challenge\r\nSee if you’ve got what it takes to survive on Mars, and get a chance to design your own base on the Red Planet.\r\n\r\n \r\nDecember 10: Geek Talk\r\nIs space really the final frontier? Hear from an SETI astronomer about why we must colonize space. ', 1, 0, 'This is a test', 1, '2009-11-02 20:10:27')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages/1
+Completed in 30ms (DB: 6) | 302 Found [http://192.168.1.76/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#show (for 66.92.11.99 at 2009-11-02 12:10:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.4ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering messages/show
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 0) [0m
+
+ActionView::TemplateError (Couldn't find User with ID=0) on line #8 of app/views/messages/show.html.erb:
+5: 
+6: <p>
+7:   <b>To:</b>
+8:   <%=h User.find(@message.to).login %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/messages/show.html.erb:8
+    app/controllers/messages_controller.rb:24:in `show'
+
+Rendered rescues/_trace (54.3ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:10:45) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-02 12:10:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-02 12:10:47) [GET]
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-11-02 12:10:59) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"testing", "password"=>"testing", "login"=>"josh", "email"=>"josh@gmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"ebF99BjHSvnq1Dno7gUarkTNb0BGZIpvaHSmBeyzS9M="}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'josh') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'josh@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('', 'dfd9852e0a8f7cf8e2f85535e076b4466e69e75a', '2009-11-02 20:10:59', NULL, '10072c18236bdc105a8f67aa8dff0c1596fbf9d1', NULL, NULL, '76560d8d01531ebcb95333bf7162d24ed797ed2f', NULL, 'josh', 'josh@gmail.com', '2009-11-02 20:10:59', 'pending')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'josh' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'josh@gmail.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `activated_at` = '2009-11-02 20:10:59', `activation_code` = NULL, `state` = 'active', `updated_at` = '2009-11-02 20:10:59' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 5) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:10:59) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-02 12:10:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-02 12:11:09) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ebF99BjHSvnq1Dno7gUarkTNb0BGZIpvaHSmBeyzS9M=", "login"=>"josh", "password"=>"testing"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:11:09) [GET]
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (0.1ms)
+Completed in 32ms (View: 3, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 66.92.11.99 at 2009-11-02 12:11:13) [POST]
+  Parameters: {"message"=>{"body"=>"Admission\r\n\r\nCost $10 ($8 for members & UC Berkeley students)\r\n\r\nClick to purchase tickets.\r\nGet great membership benefits and help support LHS!\r\n\r\n \r\nAbout\r\n\r\nYou know who you are… You think Fantasy Football is even better than the real thing and that a spreadsheet is a perfectly reasonable way to keep track of past relationships.\r\n\r\n \r\n\r\nYou’re already designing an art car for next year’s Burning Man, and you can’t stop talking about the endemic plants of the genus Ipomea that were recently put in to protect the coastal zone near your home.\r\n\r\n \r\n\r\nWell, we’ve got some good news for you: Beginning Wednesday, October 21, it’s time to let your Geek flag fly!\r\n\r\n \r\n\r\nCome to Lawrence Hall of Science, grab a drink and a friend, and get ready for some downright nerdy fun. All events include full access to exhibits, a cash bar, hors d’oeuvres, and of course the best view in the East Bay.\r\n\r\n \r\nOctober 21: Geek Performance\r\nGain unique insights into the mysteries of the universe in this live, multimedia performance by an award-winning artist.\r\n\r\n \r\nNovember 18: Geek Challenge\r\nSee if you’ve got what it takes to survive on Mars, and get a chance to design your own base on the Red Planet.\r\n\r\n \r\nDecember 10: Geek Talk\r\nIs space really the final frontier? Hear from an SETI astronomer about why we must colonize space. ", "subject"=>"This is a test", "to"=>"josh"}, "commit"=>"Send", "authenticity_token"=>"pnp7Y5hL8ucsza64pf6vjUKWpSBjFfZRo6cShd8Pfvg="}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (0.4ms)[0m   [0;1mINSERT INTO `messages` (`updated_at`, `body`, `from`, `to`, `subject`, `user_id`, `created_at`) VALUES('2009-11-02 20:11:13', 'Admission\r\n\r\nCost $10 ($8 for members & UC Berkeley students)\r\n\r\nClick to purchase tickets.\r\nGet great membership benefits and help support LHS!\r\n\r\n \r\nAbout\r\n\r\nYou know who you are… You think Fantasy Football is even better than the real thing and that a spreadsheet is a perfectly reasonable way to keep track of past relationships.\r\n\r\n \r\n\r\nYou’re already designing an art car for next year’s Burning Man, and you can’t stop talking about the endemic plants of the genus Ipomea that were recently put in to protect the coastal zone near your home.\r\n\r\n \r\n\r\nWell, we’ve got some good news for you: Beginning Wednesday, October 21, it’s time to let your Geek flag fly!\r\n\r\n \r\n\r\nCome to Lawrence Hall of Science, grab a drink and a friend, and get ready for some downright nerdy fun. All events include full access to exhibits, a cash bar, hors d’oeuvres, and of course the best view in the East Bay.\r\n\r\n \r\nOctober 21: Geek Performance\r\nGain unique insights into the mysteries of the universe in this live, multimedia performance by an award-winning artist.\r\n\r\n \r\nNovember 18: Geek Challenge\r\nSee if you’ve got what it takes to survive on Mars, and get a chance to design your own base on the Red Planet.\r\n\r\n \r\nDecember 10: Geek Talk\r\nIs space really the final frontier? Hear from an SETI astronomer about why we must colonize space. ', 1, 2, 'This is a test', 1, '2009-11-02 20:11:13')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages/2
+Completed in 104ms (DB: 6) | 302 Found [http://192.168.1.76/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#show (for 66.92.11.99 at 2009-11-02 12:11:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering messages/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Completed in 42ms (View: 7, DB: 11) | 200 OK [http://192.168.1.76/messages/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:11:19) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (0.1ms)
+Completed in 28ms (View: 2, DB: 7) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:11:22) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:31)
+Rendered messages/_inbox_list (6.0ms)
+Completed in 34ms (View: 8, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:11:52) [GET]
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (3.2ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:31)
+Rendered messages/_inbox_list (8.7ms)
+Completed in 41ms (View: 13, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:22:02) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:42)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:77)
+Rendered messages/_inbox_list (12.9ms)
+Completed in 140ms (View: 21, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:26:42) [GET]
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.5ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (14.1ms)
+Completed in 53ms (View: 19, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:27:15) [GET]
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (1.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (10.1ms)
+Completed in 52ms (View: 16, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:27:38) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (9.5ms)
+Completed in 122ms (View: 14, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-02 12:27:59) [GET]
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mMessage Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (11.1ms)
+Completed in 49ms (View: 16, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:28:19) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (0.1ms)
+Completed in 27ms (View: 3, DB: 6) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-11-02 12:28:26) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:28:26) [GET]
+Redirected to http://192.168.1.76:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://192.168.1.76/]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-11-02 12:28:26) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://192.168.1.76/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-11-02 12:28:30) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Qx3AnDjA43P70oKRcnwDuXQrsMbPqzQARvQXUHMeU00=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 21ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:28:31) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.7ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (0.1ms)
+Completed in 33ms (View: 2, DB: 8) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-11-02 12:28:33) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:28:33) [GET]
+Redirected to http://192.168.1.76:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-11-02 12:28:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-11-02 12:28:37) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"dGnLYZLqDll+x/jbD/dEGSmQ8QuXlihzUe9dlSwXIbQ=", "login"=>"josh", "password"=>"testing"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'josh') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 20ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-02 12:28:37) [GET]
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.5ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`to` = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_inbox_list46html46erb_locals_inbox_list_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_inbox_list.html.erb:44)
+Rendered messages/_inbox_list (6.8ms)
+Completed in 41ms (View: 11, DB: 7) | 200 OK [http://192.168.1.76/]

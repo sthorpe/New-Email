@@ -1,3 +1,60 @@
+<style type="text/css"> 
+
+
+body  {
+	background: #ffffff;
+	padding: 0;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+}
+
+#container { 
+	min-width: 100%;  /* this will create a container 100% of the browser width */
+	background: #ffffff;
+	margin: 0px auto; /* the auto margins center the page */
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px #c1c1c1 solid;
+	border-top: 1px #ffffff solid;
+	border-right: 0px;
+	border-left: 0px;
+	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
+} 
+
+#stackleft {
+	float: left; 
+	width: 281px; /* since this element is floated, a width must be given */
+	background: #f0f0f0; 
+	padding-left: 20px; 
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-top:0px;
+	height: 72px;
+	margin: 0px;
+}
+
+
+
+#senderpadding {
+padding-top:18px;
+padding-left:0px;
+padding-right:0px;
+padding-bottom:0px;
+float:left;
+line-height:100%;
+}
+
+
+#messagetype {
+background-image:url(/images/silhouette.gif);
+background-repeat:no-repeat;
+height:40px;
+width:40px;
+margin-top:16px;
+margin-left:0px;
+padding-right:10px;
+float:left;
+}
+
 .sender {
 color:#000000;
 font-family:Arial;
@@ -17,46 +74,79 @@ color:#7b7b7b;
 font-family:Arial;
 font-size:8pt;
 font-weight:normal;
-line-height:100%;
+line-height:170%;
 }
 
-.subject {
-color:#000000;
+#arrow-right {
+background-image:url(/images/arrow-right.gif);
+background-repeat:no-repeat;
+height:40px;
+width:40px;
+margin-top:26px;
+padding-right:0px;
+float:right;
+}
+
+#stackright { 
+	margin-left: 301px;
+	margin-right: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-height: 72px;
+	min-width:600px;
+	border-left: 1px #e3e3e3 solid; 
+	background: #ffffff;
+width: expression( document.body.clientWidth < 601 ? "600px" : "auto" ); /* set min-width for IE */
+
+}
+
+#subjectpadding {
+padding-top:14px;
+padding-left:10px;
+padding-bottom:10px;
+}
+
+.subject a:link { 
+color: #000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:bold;
+text-decoration:none;
+}
+.subject a:visited { 
+color: #000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:bold;
+}
+.subject a:hover { 
+color: #000000;
+font-family:Arial;
+font-size:9pt;
+font-weight:bold;
+text-decoration:underline;
+}
+.subject a:active { 
+color: #000000;
 font-family:Arial;
 font-size:9pt;
 font-weight:bold;
 }
 
-.preview {
+#messagepreview {
+padding-top:2px;
 color:#7b7b7b;
 font-family:Arial;
 font-size:9pt;
 font-weight:normal;
-line-height:100%;
 white-space:pre-wrap !important;
 }
 
-.stackleft { 
-border-top: 1px #ffffff solid; 
-border-left: 0px; 
-border-bottom: 1px #c1c1c1 solid; 
-border-right: 1px #e3e3e3 solid; 
-padding-left:20px; 
-background:#f0f0f0;
-empty-cells:show;
-width:281px;
-height:72px;
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
 }
 
-.stackright { 
-border-top: 1px #ffffff solid; 
-border-left: 0px; 
-border-right: 1px #ffffff solid; 
-border-bottom: 1px #c1c1c1 solid; 
-padding-left:20px; 
-background:#ffffff;
-empty-cells:show;
-width=100%;
-height=72px;
-min-width:470px;
-}
+</style>
