@@ -151,6 +151,73 @@ float:left;
 border-right: 1px #e3e3e3 solid; 
 }
 
+
+#header { 
+min-width: 100%;  /* this will create a container 100% of the browser width */
+background: url(headerbackground.gif);
+background-repeat: repeat-x;
+margin: 0px auto; /* the auto margins center the page */
+padding: 0px;
+margin: 0px;
+border-bottom: 1px #c1c1c1 solid;
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
+height: 84px;
+} 
+
+#toolbar-left {
+background-image:url(toolbar-left.gif);
+background-repeat:no-repeat;
+height:84px;
+width:339px;
+position:absolute;
+top: 0px;
+left: 0px;
+}
+
+#search_box {
+width: 431px;
+height: 31px;
+background: url(searchbox-background.gif);
+background-repeat:no-repeat;
+position:absolute;
+top:47px;
+left: 328px;
+}
+
+#search_box #s {
+float: left;
+padding: 0;
+margin: 9px 0 0 14px;
+border: 0;
+width: 368px;
+background: none;
+}
+
+#search_box #go {
+float: right;
+margin: 3px 4px 0 0;
+}
+
+.searchtext {
+color:#b8b8b8;
+font-family:Arial;
+font-size:9pt;
+font-weight:normal;
+}
+
+#accountinfo {
+color:#7b7b7b;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+float:right;
+padding-top:9px;
+padding-right:18px;
+}
+
 .clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
 	clear:both;
     height:0;

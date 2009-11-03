@@ -1,12 +1,25 @@
-<%= stylesheet_link_tag "index" %>
+<div id="header">
+	
+	<div id="toolbar-left"></div>
+	
+	<div id="search_box">
+		<input type="text" id="s" value="Search email" class="searchtext" />
+		<input type="image" src="searchbutton.gif" width="24" height="24" id="go" alt="Search" title="Search" />
+	</div>
+	<div id="accountinfo">
+	
+	<%= stylesheet_link_tag "index" %>
 
 <% if logged_in? %>
-  <%= current_user.email %>
-  <%= link_to("Home", "/") %>
-  <%= link_to("Logout", logout_url) %>
+  <%= current_user.email %> &nbsp;&nbsp;
+  <%= link_to("Home", "/") %> &nbsp;&nbsp;
+  <%= link_to("Logout", logout_url) %> &nbsp;&nbsp;
 <% else %>
   <%= link_to("Sign Up", signup_url) %>
 <% end %>
+
+	</div>
+</div>
 
 <body>
 
