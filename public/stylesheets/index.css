@@ -154,7 +154,7 @@ border-right: 1px #e3e3e3 solid;
 
 #header { 
 min-width: 100%;  /* this will create a container 100% of the browser width */
-background: url(headerbackground.gif);
+background: url(/images/headerbackground.gif);
 background-repeat: repeat-x;
 margin: 0px auto; /* the auto margins center the page */
 padding: 0px;
@@ -168,7 +168,7 @@ height: 84px;
 } 
 
 #toolbar-left {
-background-image:url(toolbar-left.gif);
+background-image:url(/images/toolbar-left.gif);
 background-repeat:no-repeat;
 height:84px;
 width:339px;
@@ -180,7 +180,7 @@ left: 0px;
 #search_box {
 width: 431px;
 height: 31px;
-background: url(searchbox-background.gif);
+background: url(/images/searchbox-background.gif);
 background-repeat:no-repeat;
 position:absolute;
 top:47px;
