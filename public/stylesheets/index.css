@@ -1,4 +1,7 @@
-<style type="text/css"> 
+*{
+margin: 0;
+padding: 0;
+}
 
 
 body  {
@@ -159,5 +162,3 @@ top: -98px;
     font-size: 1px;
     line-height: 0px;
 }
-
-</style>
