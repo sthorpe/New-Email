@@ -10,9 +10,9 @@
 	<!-- Begin sender and timestamp information -->
 	<div id="senderpadding">
   	<% if params[:sent] == "true" %>
-     <span class="sender">you</span> <span class="you">to <%= h(User.find(message.to).login) %></span>
+     <span class="sender">you</span> <span class="you">to <%= h(User.find(message.recipient).login) %></span>
     <% else %>
-     <span class="sender"><%= h(User.find(message.from).login) %></span> <span class="you">to you</span>
+     <span class="sender"><%= h(User.find(message.sender).login) %></span> <span class="you">to you</span>
     <% end %>
     <br>
     <span class="datetime"><%= h(message.created_at.strftime("%A %b %d, %I:%M %p")) %></span>
@@ -47,8 +47,11 @@
     <%= message.body %>
     
     <br class="clearfloat" />
- <div id="messagehistory">
-</div>
+      <div id="messagehistory">
+        <% message.from_user_history(current_user).each do |message_history| %>
+          <a href="#"><strong><%= message_history.subject %><%= message_history.created_at.strftime("%A %b %d, %I:%M %p") %></strong></a>
+        <%-end-%>
+      </div>
     <br class="clearfloat" />
   </div>
   

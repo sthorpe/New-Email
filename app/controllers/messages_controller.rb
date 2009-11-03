@@ -4,11 +4,7 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.xml
   def index
-    if params[:sent] == "true"
-      @messages = Message.find_all_by_user_id(current_user.id, :order => 'created_at DESC')
-    else
-      @messages = Message.find_all_by_to(current_user.id, :order => 'created_at DESC')
-    end
+    @messages = Message.from_uniq_user(current_user)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -47,8 +43,8 @@ class MessagesController < ApplicationController
   # POST /messages.xml
   def create
     @message = Message.new(params[:message])
-    @message.from = current_user.id
-    @message.to = User.find_by_login(params[:message][:to]) ? User.find_by_login(params[:message][:to]).id : params[:message][:to]
+    @message.sender = current_user.id
+    @message.recipient = User.find_by_login(params[:message][:recipient]) ? User.find_by_login(params[:message][:recipient]).id : params[:message][:recipient]
     @message.user_id = current_user.id
     respond_to do |format|
       if @message.save

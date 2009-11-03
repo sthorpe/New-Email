@@ -1,11 +1,11 @@
 <p>
   <b>From:</b>
-  <%=h User.find(@message.from).login %>
+  <%=h User.find(@message.sender).login %>
 </p>
 
 <p>
   <b>To:</b>
-  <%=h User.find(@message.to).login %>
+  <%=h User.find(@message.recipient).login %>
 </p>
 
 <p>
