@@ -22,6 +22,7 @@
   
   <!-- "Expand" arrow -->
 	<div id="arrow-right"></div>
+
 	
 	<!-- end stackleft --></div>
 
@@ -40,18 +41,12 @@
   </span>
   
   <!-- End subject and message preview -->
-  
+
   <div id="messagepreview"><%= h(truncate(message.body.gsub!(/\n/, ''), 20, "...")) %></div>
   
   <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;display:none;" id="blinddown_<%= message.id %>">
     <%= message.body %>
     
-    <br class="clearfloat" />
-      <div id="messagehistory">
-        <% message.from_user_history(current_user).each do |message_history| %>
-          <a href="#"><strong><%= message_history.subject %><%= message_history.created_at.strftime("%A %b %d, %I:%M %p") %></strong></a>
-        <%-end-%>
-      </div>
     <br class="clearfloat" />
   </div>
   
