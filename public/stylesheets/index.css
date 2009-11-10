@@ -75,7 +75,7 @@ line-height:100%;
 
 
 #messagetype {
-background-image:url(http://174.143.158.166/images/silhouette.gif);
+background-image:url(/images/silhouette.gif);
 background-repeat:no-repeat;
 height:40px;
 width:40px;
@@ -108,7 +108,7 @@ line-height:170%;
 }
 
 #arrow-right {
-background-image:url(http://174.143.158.166/images/arrow-right.gif);
+background-image:url(/images/arrow-right.gif);
 background-repeat:no-repeat;
 height:40px;
 width:40px;
@@ -189,7 +189,7 @@ left:-20px;
 
 #header { 
 min-width: 100%;  /* this will create a container 100% of the browser width */
-background: url(http://www.joshuamerrill.com/CSS/headerbackground.gif);
+background: url(/images/headerbackground.gif);
 background-repeat: repeat-x;
 margin: 0px auto; /* the auto margins center the page */
 padding: 0px;
@@ -203,7 +203,7 @@ height: 84px;
 } 
 
 #toolbar-left {
-background-image:url(http://www.joshuamerrill.com/CSS/toolbar-left.gif);
+background-image:url(/images/toolbar-left.gif);
 background-repeat:no-repeat;
 height:84px;
 width:339px;
@@ -215,7 +215,7 @@ left: 0px;
 #search_box {
 width: 431px;
 height: 31px;
-background: url(http://www.joshuamerrill.com/CSS/searchbox-background.gif);
+background: url(/images/searchbox-background.gif);
 background-repeat:no-repeat;
 position:absolute;
 top:47px;
