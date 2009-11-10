@@ -193,8 +193,63 @@ padding:0px;
 border-right: 1px #e3e3e3 solid; 
 height:378px;
 position:relative;
-top:72px;
+top:4px;
 left:-20px;
+}
+
+#messagehistory-subject {
+width:181px;
+border:0px;
+height:20px;
+background:white;
+float:left;
+overflow:hidden;
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+padding-top:3px;
+padding-left:32px;
+}
+
+#messagehistory-date {
+width:78px;
+border:0px;
+height:20px;
+background:white;
+float:right;
+overflow:hidden;
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+padding-right:10px;
+padding-top:3px;
+}
+
+#messagehistory-subject a:link { 
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+text-decoration:none;
+}
+#messagehistory-subject a:visited { 
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+}
+#messagehistory-subject a:hover { 
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+text-decoration:underline;
+}
+#messagehistory-subject a:active { 
+color: #000000;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
 }
 
 #header { 
