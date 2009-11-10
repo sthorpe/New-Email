@@ -1,9 +1,9 @@
 <span class="subject" id="show_details_link_<%= message.id %>" style="display:inline;">
-  <%= link_to(h(message.subject), "#", :onclick => "show_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}','con_#{message.id}'); return false;") %>
+  <%= link_to(h(message.subject), "#", :onclick => "show_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}','con_#{message.id}','messagepreview'); return false;") %>
 </span>
 
 <span class="subject" id="hide_details_link_<%= message.id %>" style="display:none;">
-  <%= link_to(h(message.subject), "#", :onclick => "hide_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}','con_#{message.id}'); return false;") %>
+  <%= link_to(h(message.subject), "#", :onclick => "hide_details('blinddown_#{message.id}','show_details_link_#{message.id}','hide_details_link_#{message.id}','con_#{message.id}','messagepreview'); return false;") %>
 </span>
 
 <!-- End subject and message preview -->
@@ -17,6 +17,7 @@
 <% end %>
 
 <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;display:none;" id="blinddown_<%= message.id %>">
+ <br/>
   <%= message.body %>
   <br class="clearfloat" />
 </div>
