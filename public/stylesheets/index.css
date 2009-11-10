@@ -1,16 +1,10 @@
-*{
-margin: 0;
-padding: 0;
-}
-
-
 body  {
 	background: #ffffff;
 	padding: 0;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 }
 
-#container { 
+.container { 
 	min-width: 100%;  /* this will create a container 100% of the browser width */
 	background: #ffffff;
 	margin: 0px auto; /* the auto margins center the page */
@@ -21,6 +15,38 @@ body  {
 	border-right: 0px;
 	border-left: 0px;
 	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
+	overflow:hidden;
+	height:72px;
+} 
+
+#container2 { 
+	min-width: 100%;  /* this will create a container 100% of the browser width */
+	background: #ffffff;
+	margin: 0px auto; /* the auto margins center the page */
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px #c1c1c1 solid;
+	border-top: 1px #ffffff solid;
+	border-right: 0px;
+	border-left: 0px;
+	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
+	overflow:hidden;
+	height:72px;
+} 
+
+#container3 { 
+	min-width: 100%;  /* this will create a container 100% of the browser width */
+	background: #ffffff;
+	margin: 0px auto; /* the auto margins center the page */
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px #c1c1c1 solid;
+	border-top: 1px #ffffff solid;
+	border-right: 0px;
+	border-left: 0px;
+	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
+	overflow:hidden;
+	height:72px;
 } 
 
 #stackleft {
@@ -33,7 +59,7 @@ body  {
 	padding-top:0px;
 	height: 72px;
 	margin: 0px;
-	border-right: 1px #e3e3e3 solid; 
+		border-right: 1px #e3e3e3 solid; 
 }
 
 
@@ -49,7 +75,7 @@ line-height:100%;
 
 
 #messagetype {
-background-image:url(/images/silhouette.gif);
+background-image:url(http://174.143.158.166/images/silhouette.gif);
 background-repeat:no-repeat;
 height:40px;
 width:40px;
@@ -82,7 +108,7 @@ line-height:170%;
 }
 
 #arrow-right {
-background-image:url(/images/arrow-right.gif);
+background-image:url(http://174.143.158.166/images/arrow-right.gif);
 background-repeat:no-repeat;
 height:40px;
 width:40px;
@@ -100,7 +126,6 @@ float:right;
 	min-width:600px;
 	background: #ffffff;
 width: expression( document.body.clientWidth < 601 ? "600px" : "auto" ); /* set min-width for IE */
-
 }
 
 #subjectpadding {
@@ -142,19 +167,29 @@ color:#7b7b7b;
 font-family:Arial;
 font-size:9pt;
 font-weight:normal;
+white-space:pre-wrap !important;
+}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
 }
 
 #messagehistory {
 width:301px;
-background-color: #ffffff;
-float:left;
+padding:0px;
 border-right: 1px #e3e3e3 solid; 
+height:378px;
+position:relative;
+top:72px;
+left:-20px;
 }
-
 
 #header { 
 min-width: 100%;  /* this will create a container 100% of the browser width */
-background: url(/images/headerbackground.gif);
+background: url(http://www.joshuamerrill.com/CSS/headerbackground.gif);
 background-repeat: repeat-x;
 margin: 0px auto; /* the auto margins center the page */
 padding: 0px;
@@ -168,7 +203,7 @@ height: 84px;
 } 
 
 #toolbar-left {
-background-image:url(/images/toolbar-left.gif);
+background-image:url(http://www.joshuamerrill.com/CSS/toolbar-left.gif);
 background-repeat:no-repeat;
 height:84px;
 width:339px;
@@ -180,7 +215,7 @@ left: 0px;
 #search_box {
 width: 431px;
 height: 31px;
-background: url(/images/searchbox-background.gif);
+background: url(http://www.joshuamerrill.com/CSS/searchbox-background.gif);
 background-repeat:no-repeat;
 position:absolute;
 top:47px;
@@ -216,11 +251,4 @@ font-weight:normal;
 float:right;
 padding-top:9px;
 padding-right:18px;
-}
-
-.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
-	clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
 }

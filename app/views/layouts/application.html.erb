@@ -13,7 +13,8 @@
 <% if logged_in? %>
   <%= current_user.email %> &nbsp;&nbsp;
   <%= link_to("Home", "/") %> &nbsp;&nbsp;
-  <%= link_to("Logout", logout_url) %> &nbsp;&nbsp;
+  <%= link_to("Preferences", "/") %> &nbsp;&nbsp;
+  <%= link_to("Logout", logout_url) %> 
 <% else %>
   <%= link_to("Sign Up", signup_url) %>
 <% end %>

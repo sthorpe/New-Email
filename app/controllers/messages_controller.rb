@@ -1,8 +1,6 @@
 class MessagesController < ApplicationController
   before_filter :login_required
 
-  # GET /messages
-  # GET /messages.xml
   def index
     @messages = Message.from_uniq_user(current_user)
 
@@ -12,8 +10,6 @@ class MessagesController < ApplicationController
     end
   end
 
-  # GET /messages/1
-  # GET /messages/1.xml
   def show
     @message = Message.find(params[:id])
 
@@ -23,8 +19,6 @@ class MessagesController < ApplicationController
     end
   end
 
-  # GET /messages/new
-  # GET /messages/new.xml
   def new
     @message = Message.new
 
@@ -34,13 +28,10 @@ class MessagesController < ApplicationController
     end
   end
 
-  # GET /messages/1/edit
   def edit
     @message = Message.find(params[:id])
   end
 
-  # POST /messages
-  # POST /messages.xml
   def create
     @message = Message.new(params[:message])
     @message.sender = current_user.id
@@ -58,8 +49,7 @@ class MessagesController < ApplicationController
     end
   end
 
-  # PUT /messages/1
-  # PUT /messages/1.xml
+
   def update
     @message = Message.find(params[:id])
 
@@ -75,8 +65,7 @@ class MessagesController < ApplicationController
     end
   end
 
-  # DELETE /messages/1
-  # DELETE /messages/1.xml
+
   def destroy
     @message = Message.find(params[:id])
     @message.destroy
