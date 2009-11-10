@@ -17301,3 +17301,319 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 Rendered messages/_message (93.8ms)
 Rendered messages/_inbox_list (107.2ms)
 Completed in 137ms (View: 107, DB: 9) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:37:05) [GET]
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.2ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (14.9ms)
+Completed in 49ms (View: 18, DB: 8) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:38:32) [GET]
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.6ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (12.9ms)
+Completed in 43ms (View: 13, DB: 10) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:39:30) [GET]
+  [4;36;1mUser Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.9ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (15.4ms)
+Completed in 59ms (View: 18, DB: 20) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:39:43) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (2.1ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (1.0ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.9ms)
+Rendered messages/_inbox_list (15.5ms)
+Completed in 50ms (View: 16, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:39:52) [POST]
+  Parameters: {"message"=>"10", "authenticity_token"=>"LtJUJRFhE+Ckn0jDVg/gVe71PWtcUp83YV3SOPDzLeQ=", "id"=>"10"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.5ms)
+Completed in 29ms (View: 4, DB: 6) | 200 OK [http://localhost/messages/index/10?message=10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:39:54) [POST]
+  Parameters: {"message"=>"7", "authenticity_token"=>"LtJUJRFhE+Ckn0jDVg/gVe71PWtcUp83YV3SOPDzLeQ=", "id"=>"10"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '7') LIMIT 1[0m
+  [4;35;1mMessage Load (0.2ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.6ms)
+Completed in 28ms (View: 4, DB: 6) | 200 OK [http://localhost/messages/index/10?message=7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:39:56) [POST]
+  Parameters: {"message"=>"6", "authenticity_token"=>"LtJUJRFhE+Ckn0jDVg/gVe71PWtcUp83YV3SOPDzLeQ=", "id"=>"10"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '6') LIMIT 1[0m
+  [4;36;1mMessage Load (0.2ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.5ms)
+Completed in 29ms (View: 4, DB: 5) | 200 OK [http://localhost/messages/index/10?message=6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:39:58) [POST]
+  Parameters: {"message"=>"5", "authenticity_token"=>"LtJUJRFhE+Ckn0jDVg/gVe71PWtcUp83YV3SOPDzLeQ=", "id"=>"10"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '5') LIMIT 1[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.6ms)
+Completed in 31ms (View: 4, DB: 6) | 200 OK [http://localhost/messages/index/10?message=5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:40:12) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (16.0ms)
+Completed in 49ms (View: 19, DB: 9) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:40:24) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (1.7ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (15.9ms)
+Completed in 48ms (View: 19, DB: 8) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:40:42) [GET]
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.7ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.5ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.9ms)
+Rendered messages/_inbox_list (16.5ms)
+Completed in 134ms (View: 20, DB: 8) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:40:56) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (2.1ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (15.6ms)
+Completed in 48ms (View: 19, DB: 9) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:41:05) [POST]
+  Parameters: {"message"=>"7", "authenticity_token"=>"G1jtfglYR6M6AI4bzNAubs4LGXc66PFx2O5Rov7oNZs=", "id"=>"10"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '7') LIMIT 1[0m
+  [4;36;1mMessage Load (0.2ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.5ms)
+Completed in 29ms (View: 4, DB: 7) | 200 OK [http://192.168.1.76/messages/index/10?message=7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:41:07) [POST]
+  Parameters: {"message"=>"6", "authenticity_token"=>"G1jtfglYR6M6AI4bzNAubs4LGXc66PFx2O5Rov7oNZs=", "id"=>"10"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (4.9ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '6') LIMIT 1[0m
+  [4;35;1mMessage Load (0.2ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.7ms)
+Completed in 36ms (View: 4, DB: 10) | 200 OK [http://192.168.1.76/messages/index/10?message=6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-11-09 20:41:08) [POST]
+  Parameters: {"message"=>"5", "authenticity_token"=>"G1jtfglYR6M6AI4bzNAubs4LGXc66PFx2O5Rov7oNZs=", "id"=>"10"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`id` = '5') LIMIT 1[0m
+  [4;36;1mMessage Load (0.2ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`id` = '10') LIMIT 1[0m
+Rendered messages/_message (1.7ms)
+Completed in 121ms (View: 4, DB: 5) | 200 OK [http://192.168.1.76/messages/index/10?message=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-11-09 20:41:42) [GET]
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.6ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/new_email/app/views/messages/_message.html.erb:16)
+Rendered messages/_message (0.8ms)
+Rendered messages/_inbox_list (13.3ms)
+Completed in 62ms (View: 14, DB: 8) | 200 OK [http://localhost/]
