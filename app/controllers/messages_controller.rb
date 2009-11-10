@@ -2,17 +2,18 @@ class MessagesController < ApplicationController
   before_filter :login_required
 
   def index
-    @messages = Message.from_uniq_user(current_user)
+    @messages = Message.from_uniq_user(current_user) unless params[:message]
 
     respond_to do |format|
       if params[:message]
         @message = Message.find_by_id(params[:message])
-        render (:update) do |page|
-          page.replace_html 'content', :partial => 'message'
-        end
+        format.js { render(:update) { |page|
+          page.replace_html 'subjectpadding', :partial => 'message', :locals => {:message => @message}
+        }}
+      else
+        format.html # index.html.erb
+        format.xml  { render :xml => @message }
       end
-      format.html # index.html.erb
-      format.xml  { render :xml => @message }
     end
   end
 

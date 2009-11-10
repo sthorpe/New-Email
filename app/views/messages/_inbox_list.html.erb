@@ -21,7 +21,7 @@
   <div id="messagehistory">
     <% message.from_user_history(current_user).each do |message_history| %>
        <br class="clearfloat" />
-      <a href="#"><%= message_history.subject %><%= message_history.created_at.strftime("%A %b %d, %I:%M %p") %></a>
+      <%= link_to_remote(message_history.subject+"-"+message_history.created_at.strftime("%A %b %d, %I:%M %p"),  :url => { :action => "index", :message => message_history.id }) %>
     <%-end-%>
   </div>
 	
