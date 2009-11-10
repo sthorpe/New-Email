@@ -213,7 +213,7 @@ left: 0px;
 }
 
 #logo a {
-background-image:url(images/logo.gif);
+background-image:url(/images/logo.gif);
 background-repeat:no-repeat;
 height:27px;
 width:192px;
@@ -227,7 +227,7 @@ visibility: hidden;
 }
 
 #compose a {
-background-image:url(images/compose.gif);
+background-image:url(/images/compose.gif);
 background-repeat:no-repeat;
 height:24px;
 width:73px;

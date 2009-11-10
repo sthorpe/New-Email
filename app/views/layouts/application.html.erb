@@ -2,7 +2,7 @@
 	
 	<div id="toolbar-left"></div>
 	<div id="logo"><span><%= link_to("Home", "/") %></span></div>
-	<div id="compose"><span><%= link_to 'Write a New email', new_message_path %></span></div>
+	<div id="compose"><span><%= link_to '', new_message_path %></span></div>
 	<div id="search_box">
 		<input type="text" id="s" value="Search email" class="searchtext" />
 		<input type="image" src="/images/searchbutton.gif" width="24" height="24" id="go" alt="Search" title="Search" />
@@ -13,7 +13,7 @@
 
 <% if logged_in? %>
   <%= current_user.email %> &nbsp;&nbsp;
-  <%= link_to("Home", "/") %> &nbsp;&nbsp;
+  <%= link_to("", "/") %> &nbsp;&nbsp;
   <%= link_to("Preferences", "/") %> &nbsp;&nbsp;
   <%= link_to("Logout", logout_url) %> 
 <% else %>
