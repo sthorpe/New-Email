@@ -17,7 +17,8 @@
   
   
   <!-- "Expand" arrow -->
-	<div id="arrow-right"></div>
+	<div id="arrow-right-<%=message.id%>" class="arrow-right"></div>
+	<div id="arrow-down-<%=message.id%>" class="arrow-down" style="display:none;"></div>
   <div id="messagehistory">
     <% message.from_user_history(current_user).each do |message_history| %>
        <br class="clearfloat" />
