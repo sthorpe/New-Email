@@ -21,7 +21,7 @@
   <div id="messagehistory">
     <% message.from_user_history(current_user).each do |message_history| %>
        <br class="clearfloat" />
-      <%= link_to_remote(message_history.subject+"-"+message_history.created_at.strftime("%A %b %d, %I:%M %p"),  :url => { :action => "index", :message => message_history.id }) %>
+      <%= link_to_remote(message_history.subject+"-"+message_history.created_at.strftime("%A %b %d, %I:%M %p"),  :url => { :action => "index", :message => message_history.id, :id => message.id }) %>
     <%-end-%>
   </div>
 	
@@ -30,7 +30,7 @@
   <div id="stackright">
   
   <!-- Begin subject and message -->
-  	<div id="subjectpadding">
+  	<div id="subjectpadding_<%= message.id %>">
   	
 
       <%= render :partial => 'message', :locals => {:message => message} %>

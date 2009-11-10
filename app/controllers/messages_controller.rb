@@ -7,8 +7,9 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if params[:message]
         @message = Message.find_by_id(params[:message])
+        @id = Message.find_by_id(params[:id])
         format.js { render(:update) { |page|
-          page.replace_html 'subjectpadding', :partial => 'message', :locals => {:message => @message}
+          page.replace_html "subjectpadding_#{@id.id}", :partial => 'message', :locals => {:message => @message}
         }}
       else
         format.html # index.html.erb
