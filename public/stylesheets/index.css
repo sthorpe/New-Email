@@ -212,6 +212,16 @@ top: 0px;
 left: 0px;
 }
 
+#compose {
+background-image:url(compose.gif);
+background-repeat:no-repeat;
+height:24px;
+width:73px;
+position:absolute;
+top: 51px;
+left: 328px;
+}
+
 #search_box {
 width: 431px;
 height: 31px;
@@ -219,7 +229,7 @@ background: url(/images/searchbox-background.gif);
 background-repeat:no-repeat;
 position:absolute;
 top:47px;
-left: 328px;
+left: 411px;
 }
 
 #search_box #s {
