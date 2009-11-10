@@ -5,6 +5,12 @@ class MessagesController < ApplicationController
     @messages = Message.from_uniq_user(current_user)
 
     respond_to do |format|
+      if params[:message]
+        @message = Message.find_by_id(params[:message])
+        render (:update) do |page|
+          page.replace_html 'content', :partial => 'message'
+        end
+      end
       format.html # index.html.erb
       format.xml  { render :xml => @message }
     end
