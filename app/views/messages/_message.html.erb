@@ -7,8 +7,14 @@
 </span>
 
 <!-- End subject and message preview -->
-
+<% if params[:message] %>
+  <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;">
+    <%= message.body %>
+    <br class="clearfloat" />
+  </div>
+<% else %>
 <div id="messagepreview"><%= h(truncate(message.body.gsub!(/\n/, ''), 20, "...")) %></div>
+<% end %>
 
 <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;display:none;" id="blinddown_<%= message.id %>">
   <%= message.body %>
