@@ -205,21 +205,39 @@ height: 84px;
 #toolbar-left {
 background-image:url(/images/toolbar-left.gif);
 background-repeat:no-repeat;
-height:84px;
+height:46px;
 width:339px;
 position:absolute;
-top: 0px;
+top: 38px;
 left: 0px;
 }
 
-#compose {
-background-image:url(compose.gif);
+#logo a {
+background-image:url(images/logo.gif);
+background-repeat:no-repeat;
+height:27px;
+width:192px;
+position:absolute;
+top: 16px;
+left: 15px;
+display:block;
+}
+#logo a span {
+visibility: hidden;
+}
+
+#compose a {
+background-image:url(images/compose.gif);
 background-repeat:no-repeat;
 height:24px;
 width:73px;
 position:absolute;
 top: 51px;
 left: 328px;
+display:block;
+}
+#compose a span {
+visibility: hidden;
 }
 
 #search_box {
