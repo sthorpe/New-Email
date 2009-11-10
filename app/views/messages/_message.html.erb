@@ -13,7 +13,7 @@
     <br class="clearfloat" />
   </div>
 <% else %>
-<div id="messagepreview_<%= message.id %>" class="messagepreview"><%= h(truncate(message.body.gsub!(/\n/, ''), 20, "...")) %></div>
+<div id="messagepreview_<%= message.id %>" class="messagepreview"><%= h(truncate(message.body.gsub!(/\n/, ''), 140, "...")) %></div>
 <% end %>
 
 <div style="color:#7b7b7b;font-family:Arial;font-size:9pt;font-weight:normal;display:none;" id="blinddown_<%= message.id %>">
