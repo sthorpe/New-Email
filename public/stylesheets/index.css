@@ -208,7 +208,8 @@ color: #000000;
 font-family:Arial;
 font-size:8pt;
 padding-top:3px;
-padding-left:32px;
+padding-left:18px;
+line-height:20px;
 }
 
 #messagehistory-date {
@@ -221,8 +222,9 @@ overflow:hidden;
 color: #000000;
 font-family:Arial;
 font-size:8pt;
-padding-right:10px;
+padding-right:0px;
 padding-top:3px;
+line-height:20px;
 }
 
 #messagehistory-subject a:link { 
