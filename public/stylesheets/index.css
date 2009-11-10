@@ -128,7 +128,7 @@ float:right;
 width: expression( document.body.clientWidth < 601 ? "600px" : "auto" ); /* set min-width for IE */
 }
 
-#subjectpadding {
+.subjectpadding {
 padding-top:14px;
 padding-left:10px;
 padding-bottom:10px;
