@@ -1,5 +1,5 @@
 body  {
-	background: #ffffff;
+	background: #F3F3F3;
 	padding: 0;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 }
@@ -576,6 +576,7 @@ div#fancy_bg {
 	border: 0;
 	padding: 0;
 	margin: 0;
+	background:#f3f3f3;
 }
 	
 div.fancy_bg {
