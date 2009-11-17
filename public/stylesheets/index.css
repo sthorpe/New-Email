@@ -349,8 +349,8 @@ padding-right:18px;
 
 
 #compose-header { 
-background: url(compose-header.gif);
-background-repeat: repeat-x;
+background: url(/images/compose-header.gif);
+background-repeat: no-repeat;
 padding: 0px;
 margin: 0px;
 border: none;
