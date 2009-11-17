@@ -19,36 +19,6 @@ body  {
 	height:72px;
 } 
 
-#container2 { 
-	min-width: 100%;  /* this will create a container 100% of the browser width */
-	background: #ffffff;
-	margin: 0px auto; /* the auto margins center the page */
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px #c1c1c1 solid;
-	border-top: 1px #ffffff solid;
-	border-right: 0px;
-	border-left: 0px;
-	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
-	overflow:hidden;
-	height:72px;
-} 
-
-#container3 { 
-	min-width: 100%;  /* this will create a container 100% of the browser width */
-	background: #ffffff;
-	margin: 0px auto; /* the auto margins center the page */
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px #c1c1c1 solid;
-	border-top: 1px #ffffff solid;
-	border-right: 0px;
-	border-left: 0px;
-	width: expression( document.body.clientWidth < 801 ? "800px" : "auto" ); /* set min-width for IE */
-	overflow:hidden;
-	height:72px;
-} 
-
 #stackleft {
 	float: left; 
 	width: 281px; /* since this element is floated, a width must be given */
@@ -144,18 +114,14 @@ padding-left:10px;
 padding-bottom:10px;
 }
 
-.subject a:link { 
+.subject a:link,
+.subject a:visited,
+.subject a:active { 
 color: #000000;
 font-family:Arial;
 font-size:9pt;
 font-weight:bold;
 text-decoration:none;
-}
-.subject a:visited { 
-color: #000000;
-font-family:Arial;
-font-size:9pt;
-font-weight:bold;
 }
 .subject a:hover { 
 color: #000000;
@@ -163,12 +129,6 @@ font-family:Arial;
 font-size:9pt;
 font-weight:bold;
 text-decoration:underline;
-}
-.subject a:active { 
-color: #000000;
-font-family:Arial;
-font-size:9pt;
-font-weight:bold;
 }
 
 .messagepreview {
@@ -226,18 +186,14 @@ padding-top:3px;
 line-height:20px;
 }
 
-#messagehistory-subject a:link { 
+#messagehistory-subject a:link,
+#messagehistory-subject a:visited,
+#messagehistory-subject a:active { 
 color: #000000;
 font-family:Arial;
 font-size:8pt;
 font-weight:normal;
 text-decoration:none;
-}
-#messagehistory-subject a:visited { 
-color: #000000;
-font-family:Arial;
-font-size:8pt;
-font-weight:normal;
 }
 #messagehistory-subject a:hover { 
 color: #000000;
@@ -245,12 +201,6 @@ font-family:Arial;
 font-size:8pt;
 font-weight:normal;
 text-decoration:underline;
-}
-#messagehistory-subject a:active { 
-color: #000000;
-font-family:Arial;
-font-size:8pt;
-font-weight:normal;
 }
 
 #header { 
@@ -347,6 +297,22 @@ padding-top:9px;
 padding-right:18px;
 }
 
+#accountinfo a:link,
+#accountinfo a:visited,
+#accountinfo a:active {
+color: #336699;
+font-family:Arial;
+font-size:8pt;
+font-weight:normal;
+text-decoration:underline;
+}
+#accountinfo a:hover { 
+color: #6666CC;
+font-family:Arial;
+font-size:9pt;
+font-weight:normal;
+text-decoration:underline;
+}
 
 #compose-header { 
 background: url(/images/compose-header.gif);
