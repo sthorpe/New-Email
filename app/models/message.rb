@@ -8,7 +8,7 @@ class Message < ActiveRecord::Base
   end
   
   def from_user_history(current_user)
-    @messages = Message.find(:all, :conditions =>["user_id=? and recipient=?",current_user.id, self.sender], :order => 'created_at DESC', :limit => 8)
+    @messages = Message.find(:all, :conditions =>["user_id=? and recipient=?",current_user.id, self.sender], :order => 'created_at DESC', :limit => 6)
     return @messages
   end
 end
