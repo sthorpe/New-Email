@@ -1,15 +1,23 @@
+<%= javascript_include_tag :defaults, "jquery", "jquery.fancybox", "jquery.fancybox.pack" %>
+<%= stylesheet_link_tag "index", "style" %>
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery("a#compose").fancybox({'zoomSpeedIn': 0, 'zoomSpeedOut': 0, 'frameWidth': 630, 'frameHeight': 660, 'hideOnContentClick': false});
+	});
+</script>
+
 <div id="header">
 	
 	<div id="toolbar-left"></div>
 	<div id="logo"><span><%= link_to("", "/") %></span></div>
-	<div id="compose"><span><%= link_to '', new_message_path %></span></div>
+	<div id="compose"><span><%= link_to '', new_message_path , :id => "compose"  %></span></div>
 	<div id="search_box">
 		<input type="text" id="s" value="Search email" class="searchtext" />
 		<input type="image" src="/images/searchbutton.gif" width="24" height="24" id="go" alt="Search" title="Search" />
 	</div>
 	<div id="accountinfo">
-	
-	<%= stylesheet_link_tag "index" %>
+
 
 <% if logged_in? %>
   <%= current_user.email %> &nbsp;&nbsp;

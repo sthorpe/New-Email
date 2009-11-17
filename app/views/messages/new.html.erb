@@ -1,27 +1,16 @@
-<h1>New message</h1>
+  <% form_for(@message, :html => {:class => "new_message", :id => "new_message"}) do |f| %>
+  <div style="margin:0;padding:0;display:inline"></div>
 
-<% form_for(@message) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label "from:" %> 
-    <%= current_user.login %>
-  </p>
-  <p>
-    <%= f.label :to %><br />
-    <%= f.text_field :recipient %>
-  </p>
-  <p>
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit 'Send' %>
-  </p>
-<% end %>
+	<label for="message_recipient">TO: </label>
+	  <%= f.text_field :recipient, :class => "send" %><br>
+		
+	<label for="message_subject" accesskey="l">SUBJECT: </label>
+	  <%= f.text_field :subject, :class => "send" %><br>
 
-<%= link_to 'Cancel', messages_path %>
+    <%= f.text_area :body, :class => "send" %>
+
+<div id="send-bottom"><input type="image" src="/images/send-bottom.gif" id="message_submit" name="commit" /></div>
+
+<% end %>

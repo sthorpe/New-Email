@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 function show_details(div,div2,div3,div4,div5,div6,div7) {
 	e = document.getElementById(div4);
 	$(div).style.display = 'inline';

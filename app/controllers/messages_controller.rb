@@ -29,11 +29,7 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @message }
-    end
+    render :layout => 'popup' 
   end
 
   def edit
@@ -48,7 +44,7 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if @message.save
         flash[:notice] = 'Message was successfully created.'
-        format.html { redirect_to(@message) }
+        format.html { redirect_to :action => "index" }
         format.xml  { render :xml => @message, :status => :created, :location => @message }
       else
         format.html { render :action => "new" }
