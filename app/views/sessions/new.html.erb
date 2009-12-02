@@ -59,6 +59,7 @@
 	<div id="content">
 		<div id="logo"><a href="http://mailbright.com"><span>Mailbright</span></a></div>
 		<div id="login_box">
+		  <% form_tag session_path do -%>
   			<div id="login-on">
   			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext", :onfocus => "changeLoginBox()" %>
   			</div>
@@ -74,7 +75,7 @@
   			</div>
 
   			<input type="image" src="/images/loginbutton.gif" width="60" height="20" id="submit" alt="Login" title="Login" />
-
+		  <% end -%>
 		</div>
 	</div>
 </div>
