@@ -19,11 +19,12 @@
 
 </head>
 <body>
-
-
+<center>
+<%= flash[:notice] %>
+</center>
 <div id="header">
 	<div id="content">
-		<div id="logo"><a href="http://mailbright.com"><span>Mailbright</span></a></div>
+		<div id="logo"><a href="/"><span>Mailbright</span></a></div>
 		<div id="login_box">
 		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
   			<div id="login-on">
