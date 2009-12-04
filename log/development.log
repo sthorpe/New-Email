@@ -22624,3 +22624,518 @@ Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/session/new]
 Processing SessionsController#new (for ::1 at 2009-12-01 22:05:15) [GET]
 Rendering sessions/new
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:30:18) [GET]
+Rendering sessions/new
+Completed in 44ms (View: 41, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-04 14:30:33) [POST]
+  Parameters: {"x"=>"34", "y"=>"12", "authenticity_token"=>"rCvtKe0iD54MGjm/um2WZ8iddqcw9VcYv/JcW2yupus=", "login"=>"", "password"=>""}
+Failed login for '' from 127.0.0.1 at Fri Dec 04 22:30:34 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 251ms (View: 11, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-04 14:31:25) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:31:25) [GET]
+Rendering sessions/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:31:52) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-12-04 14:31:56) [GET]
+
+NameError (uninitialized constant SessionController):
+  
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:32:02) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:34:00) [GET]
+Rendering sessions/new
+Completed in 135ms (View: 133, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:34:54) [GET]
+Rendering sessions/new
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:34:58) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:35:05) [POST]
+  Parameters: {"x"=>"31", "y"=>"8", "authenticity_token"=>"MeBrATXbbjD2ggPr6jqEG4NhliMpU93l9ZMh/xtq3Rg=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (336.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (9.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 416ms (DB: 347) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:35:06) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:35:14) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"MeBrATXbbjD2ggPr6jqEG4NhliMpU93l9ZMh/xtq3Rg=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/
+Completed in 21ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:35:14) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-12-04 14:36:07) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (22.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (68.9ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (363.4ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (3.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (23.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (51.8ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (1.0ms)
+Rendered messages/_inbox_list (291.6ms)
+Completed in 995ms (View: 253, DB: 535) | 200 OK [http://192.168.1.76/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-12-04 14:36:28) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:36:28) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:36:35) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"uuWv7mzno25wMRrL7NVmXmC25z/q0R1SyGNEihf1zzo=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages
+Completed in 20ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-12-04 14:36:35) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mMessage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mMessage Load (0.4ms)[0m   [0mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (1.0ms)
+Rendered messages/_inbox_list (16.1ms)
+Completed in 45ms (View: 17, DB: 7) | 200 OK [http://192.168.1.76/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-12-04 14:36:43) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 13ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:36:44) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 66.92.11.99 at 2009-12-04 14:36:50) [GET]
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://192.168.1.76/signup]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:36:59) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:37:07) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"sgOM0v1HoJlPvV3Zdf0o3g383sCeuXHTKKLFi8CLrsA=", "login"=>"sthorpe", "password"=>"mytruelove"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Failed login for 'sthorpe' from 66.92.11.99 at Fri Dec 04 22:37:07 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 23ms (View: 3, DB: 3) | 200 OK [http://192.168.1.76/session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:42:42) [GET]
+Rendering sessions/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:42:46) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:42:47) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:43:22) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-04 14:43:27) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"rCvtKe0iD54MGjm/um2WZ8iddqcw9VcYv/JcW2yupus=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 22ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:43:27) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:43:46) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:44:32) [GET]
+Rendering sessions/new
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-04 14:44:33) [GET]
+Rendering sessions/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:44:36) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:44:58) [GET]
+Rendering sessions/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:45:02) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:45:11) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"sgOM0v1HoJlPvV3Zdf0o3g383sCeuXHTKKLFi8CLrsA=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages
+Completed in 20ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-12-04 14:45:11) [GET]
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.5ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.9ms)
+Rendered messages/_inbox_list (15.5ms)
+Completed in 53ms (View: 20, DB: 9) | 200 OK [http://192.168.1.76/messages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-12-04 14:45:17) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 13ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:45:17) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:45:41) [GET]
+Rendering sessions/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:45:50) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"zwfOUhZZ9EDp17P/EWpcQcJG5wWigbW93SrekS9KFqY=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages
+Completed in 21ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-12-04 14:45:50) [GET]
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (1.0ms)
+Rendered messages/_inbox_list (16.7ms)
+Completed in 48ms (View: 17, DB: 9) | 200 OK [http://192.168.1.76/messages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-12-04 14:46:07) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 13ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:46:07) [GET]
+Rendering sessions/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:47:06) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:47:13) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "authenticity_token"=>"slwiinvLhT+bG9u12/k4yZgj90jtDLW/r/lJbxg5nms=", "login"=>"sthorpe", "password"=>"testing"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'sthorpe') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.76:3000/messages
+Completed in 20ms (DB: 3) | 302 Found [http://192.168.1.76/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 66.92.11.99 at 2009-12-04 14:47:13) [GET]
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mMessage Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=1) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=3) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (0.5ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM `messages` WHERE (user_id=1 and recipient=2) ORDER BY created_at DESC LIMIT 7[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47messages47_message46html46erb_locals_message_object at /Users/sthorpe/Programming/Rails/mailbright/app/views/messages/_message.html.erb:26)
+Rendered messages/_message (1.0ms)
+Rendered messages/_inbox_list (15.7ms)
+Completed in 48ms (View: 16, DB: 9) | 200 OK [http://192.168.1.76/messages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 66.92.11.99 at 2009-12-04 14:47:28) [GET]
+Redirected to http://192.168.1.76:3000/
+Completed in 13ms (DB: 0) | 302 Found [http://192.168.1.76/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:47:28) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 66.92.11.99 at 2009-12-04 14:47:31) [POST]
+  Parameters: {"x"=>"30", "y"=>"6", "authenticity_token"=>"1dEfflNHv5AtXDRn5H8rvYsEeyYQvV8CtJEmDGAb4XA=", "login"=>"allan.m.miller@gmail.com", "password"=>"testing"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'allan.m.miller@gmail.com') AND (users.state = 'active') LIMIT 1[0m
+Failed login for 'allan.m.miller@gmail.com' from 66.92.11.99 at Fri Dec 04 22:47:31 UTC 2009
+Redirected to http://192.168.1.76:3000/login
+Completed in 14ms (DB: 1) | 302 Found [http://192.168.1.76/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:47:31) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 66.92.11.99 at 2009-12-04 14:48:21) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://192.168.1.76/]

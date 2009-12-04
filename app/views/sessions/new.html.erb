@@ -3,7 +3,7 @@
 <head>
 
 
-<%= stylesheet_link_tag "index", "styles" %>
+<%= stylesheet_link_tag "styles" %>
 
 
 <!--[if IE]>
@@ -11,44 +11,10 @@
 <![endif]-->
 
 
-
+<link rel="shortcut icon" href="/favicon.ico" >
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Welcome to MailBright, a next generation email service</title>
 
-
-<script language="javascript">
- function changePasswordBox()
- {
-    document.getElementById('password-on').style.display='none';
-    document.getElementById('password-off').style.display='';
-    document.getElementById('password').focus();
- }
- function restorePasswordBox()
- {
-    if(document.getElementById('password').value=='')
-    {
-      document.getElementById('password-on').style.display='';
-      document.getElementById('password-off').style.display='none';
-    }
- }
-</script>
-
-<script language="javascript">
- function changeLoginBox()
- {
-    document.getElementById('login-on').style.display='none';
-    document.getElementById('login-off').style.display='';
-    document.getElementById('login').focus();
- }
- function restoreLoginBox()
- {
-    if(document.getElementById('login').value=='')
-    {
-      document.getElementById('login-on').style.display='';
-      document.getElementById('login-off').style.display='none';
-    }
- }
-</script>
 
 
 </head>
@@ -59,21 +25,13 @@
 	<div id="content">
 		<div id="logo"><a href="http://mailbright.com"><span>Mailbright</span></a></div>
 		<div id="login_box">
-		  <% form_tag session_path do -%>
+		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
   			<div id="login-on">
-  			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext", :onfocus => "changeLoginBox()" %>
+  			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext" %>
   			</div>
-  			<div id="login-off" style="display:none">
-  			<input type="text" id="login" class="logintext" onBlur="restoreLoginBox()" />
-  			</div>		
-		
   			<div id="password-on">
-  			<%= password_field_tag 'password', nil , :id => "login", :class => "logintext", :onfocus => "changePasswordBox()"%>
+  			<%= password_field_tag 'password', nil , :id => "login", :class => "logintext" %>
   			</div>
-  			<div id="password-off" style="display:none">
-  			<input type="password" id="login" class="logintext" onBlur="restorePasswordBox()" />
-  			</div>
-
   			<input type="image" src="/images/loginbutton.gif" width="60" height="20" id="submit" alt="Login" title="Login" />
 		  <% end -%>
 		</div>
