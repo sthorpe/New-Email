@@ -23,20 +23,14 @@
 <%= flash[:notice] %>
 </center>
 <div id="header">
-	<div id="content">
-		<div id="logo"><a href="/"><span>Mailbright</span></a></div>
-		<div id="login_box">
-		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
-  			<div id="login-on">
-  			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext" %>
-  			</div>
-  			<div id="password-on">
-  			<%= password_field_tag 'password', nil , :id => "login", :class => "logintext" %>
-  			</div>
-  			<input type="image" src="/images/loginbutton.gif" width="60" height="20" id="submit" alt="Login" title="Login" />
-		  <% end -%>
-		</div>
-	</div>
+	<div id="container">
+		<div id="logo"><a href="/"><span></span></a></div>
+   		<div id="navigation">
+   		 	<div class="navigation-left">SIGN UP</div>
+   		 	<div class="navigation-left">LOG IN</div>
+   		 	<div class="navigation-right">FAQ</div>
+   		</div>
+    </div>
 </div>
 
 
