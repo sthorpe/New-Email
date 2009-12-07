@@ -36,9 +36,9 @@ function showID(objID){
 	<div id="container">
 		<div id="logo"><a href="/"><span></span></a></div>
    		<div id="navigation">
-   		 	<div class="navigation-left"><a href="http://www.mailbright.com/signup">SIGN UP</a></div>
-   		 	<div class="navigation-left"><a href="#" onClick="hideID('navigation');showID('login_box');">LOG IN</a></div>
-   		 	<div class="navigation-right"><a href="http://www.mailbright.com/faq">FAQ</a></div>
+   		 	<div class="navigation-left"><span class="navigation"><a href="http://www.mailbright.com/signup">SIGN UP</a></span></div>
+   		 	<div class="navigation-left"><span class="navigation"><a href="#" onClick="hideID('navigation');showID('login_box');">LOG IN</a></span></div>
+   		 	<div class="navigation-right"><span class="navigation"><a href="http://www.mailbright.com/faq">FAQ</a></span></div>
    		</div>
    		<div id="login_box" style="display:none;">
 		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
