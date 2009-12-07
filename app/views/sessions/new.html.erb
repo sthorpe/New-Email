@@ -27,6 +27,41 @@ function showID(objID){
 }
 </script>
 
+<script language="javascript">
+ function changePasswordBox()
+ {
+    document.getElementById('password-on').style.display='none';
+    document.getElementById('password-off').style.display='';
+    document.getElementById('password').focus();
+ }
+ function restorePasswordBox()
+ {
+    if(document.getElementById('password').value=='')
+    {
+      document.getElementById('password-on').style.display='';
+      document.getElementById('password-off').style.display='none';
+    }
+ }
+</script>
+
+<script language="javascript">
+ function changeLoginBox()
+ {
+    document.getElementById('login-on').style.display='none';
+    document.getElementById('login-off').style.display='';
+    document.getElementById('login').focus();
+ }
+ function restoreLoginBox()
+ {
+    if(document.getElementById('login').value=='')
+    {
+      document.getElementById('login-on').style.display='';
+      document.getElementById('login-off').style.display='none';
+    }
+ }
+</script>
+
+
 </head>
 <body>
 <center>
@@ -36,16 +71,26 @@ function showID(objID){
 	<div id="container">
 		<div id="logo"><a href="/"><span></span></a></div>
    		<div id="navigation">
-   		 	<div class="navigation-left"><span class="navigation"><a href="http://www.mailbright.com/signup">SIGN UP</a></span></div>
-   		 	<div class="navigation-left"><span class="navigation"><a href="#" onClick="hideID('navigation');showID('login_box');">LOG IN</a></span></div>
-   		 	<div class="navigation-right"><span class="navigation"><a href="http://www.mailbright.com/faq">FAQ</a></span></div>
+   		 	<div class="navigation-left"><span class="nav"><a href="http://www.mailbright.com/signup">SIGN UP</a></span></div>
+   		 	<div class="navigation-left"><span class="nav"><a href="#" onClick="hideID('navigation');showID('login_box');">LOG IN</a></span></div>
+   		 	<div class="navigation-right"><span class="nav"><a href="http://www.mailbright.com/faq">FAQ</a></span></div>
    		</div>
    		<div id="login_box" style="display:none;">
 		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
+  			
   			<div id="login-on">
+			<input type="text" id="login" value="Login" class="logintext" onfocus="changeLoginBox()" />
+			</div>
+  			
+  			<div id="login-off" style="display:none">
   			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext" %>
   			</div>
+  			
   			<div id="password-on">
+			<input type="text" id="login" value="Password" class="logintext" onfocus="changePasswordBox()" />
+			</div>
+  			
+  			<div id="password-off" style="display:none">
   			<%= password_field_tag 'password', nil , :id => "login", :class => "logintext" %>
   			</div>
   			<input type="image" src="/images/loginbutton.gif" width="60" height="20" id="submit" alt="Login" title="Login" />
