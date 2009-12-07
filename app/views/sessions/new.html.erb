@@ -15,7 +15,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Welcome to MailBright, a next generation email service</title>
 
-
+<SCRIPT type="text/javascript">
+var ie = (document.all) ? true : false;
+function hideID(objID){
+    var element = (ie) ? document.all(objID) : document.getElementById(objID);
+    element.style.display="none"
+}
+function showID(objID){
+    var element = (ie) ? document.all(objID) : document.getElementById(objID);
+    element.style.display="block"
+}
+</script>
 
 </head>
 <body>
@@ -27,9 +37,20 @@
 		<div id="logo"><a href="/"><span></span></a></div>
    		<div id="navigation">
    		 	<div class="navigation-left">SIGN UP</div>
-   		 	<div class="navigation-left">LOG IN</div>
+   		 	<div class="navigation-left"><a href="#" onClick="hideID('navigation');showID('login_box');">LOG IN</a></div>
    		 	<div class="navigation-right">FAQ</div>
    		</div>
+   		<div id="login_box" style="display:none;">
+		  <% form_tag session_path, :style => "padding-bottom:10px;" do -%>
+  			<div id="login-on">
+  			<%= text_field_tag 'login', @login, :id => "login", :class => "logintext" %>
+  			</div>
+  			<div id="password-on">
+  			<%= password_field_tag 'password', nil , :id => "login", :class => "logintext" %>
+  			</div>
+  			<input type="image" src="/images/loginbutton.gif" width="60" height="20" id="submit" alt="Login" title="Login" />
+		  <% end -%>
+		</div>
     </div>
 </div>
 
