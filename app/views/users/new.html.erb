@@ -174,23 +174,24 @@ left:155px;
 		<div class="main-left">
 			<div id="header-freequick"></div>
 			<div id="signupform">
-			
-			
-			<br class="form">
-			<label for "username">Username</label>
-			<input id="username" class="signupforms" type="text">
-			<br class="form">
-			<label for "email">Email</label>
-			<input id="email" class="signupforms" type="text">
-			<br class="form">		
-			<label for "password">Password</label>
-			<input id="password" class="signupforms" type="password">
-			<br class="form">
-			<label for "confirmpassword">Confirm password</label>
-			<input id="confirmpassword" class="signupforms"  type="password">	
-			<br class="form">
-			<input type="image" src="/images/accept.jpg" width="280" height="38" id="accept" alt="I accept. Create my account." title="accept" class="accept" />
-			</div>
+			<% @user.password = @user.password_confirmation = nil %>
+			<% form_for :user, :url => users_path do |f| -%>
+  			<br class="form">
+  			<label for "username">Username</label>
+  			<%= f.text_field :login, :id => "username", :class => "signupforms" %>
+  			<br class="form">
+  			<label for "email">Email</label>
+  			<%= f.text_field :email, :id => "email", :class => "signupforms" %>
+  			<br class="form">		
+  			<label for "password">Password</label>
+  			<%= f.password_field :password, :id => "password", :class => "signupforms" %>
+  			<br class="form">
+  			<label for "confirmpassword">Confirm password</label>
+  			<%= f.password_field :password_confirmation, :id => "confirmpassword", :class => "signupforms" %>	
+  			<br class="form">
+  			<input type="image" src="/images/accept.jpg" width="280" height="38" id="accept" alt="I accept. Create my account." title="accept" class="accept" />
+  			</div>
+			<% end -%>
 		</div>
 		<div class="main-right">
 		<div id="header-startenjoying"></div>
@@ -204,23 +205,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh arcu, gravida
 </div>
 </body>
 </html>
-
-<h1>Sign up as a new user</h1>
-<% @user.password = @user.password_confirmation = nil %>
-
-<%= error_messages_for :user %>
-<% form_for :user, :url => users_path do |f| -%>
-<p><%= label_tag 'login' %><br/>
-<%= f.text_field :login %></p>
-
-<p><%= label_tag 'email' %><br/>
-<%= f.text_field :email %></p>
-
-<p><%= label_tag 'password' %><br/>
-<%= f.password_field :password %></p>
-
-<p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
-<%= f.password_field :password_confirmation %></p>
-
-<p><%= submit_tag 'Sign up' %></p>
-<% end -%>

@@ -24115,3 +24115,143 @@ Processing UsersController#new (for ::1 at 2009-12-05 01:04:01) [GET]
   [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
 Rendering users/new
 Completed in 17ms (View: 4, DB: 3) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (31.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:30:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 73ms (View: 71, DB: 32) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:33:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:33:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:33:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:33:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-07 18:33:59) [GET]
+  [4;36;1mUser Columns (49.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Completed in 309ms (View: 75, DB: 49) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-07 18:34:09) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"testing", "password"=>"testing", "login"=>"billy", "email"=>"billy@aol.com"}, "x"=>"188", "y"=>"11", "authenticity_token"=>"dQOaW9y0QzUQatMqrfiNP6MqlNWlr7WC6WDwQ4sacXI="}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (32.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'billy') LIMIT 1[0m
+  [4;35;1mUser Load (6.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'billy@aol.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('', 'de815e587ef587d9851fa702c8485ae707a5f40c', '2009-12-08 02:34:10', NULL, '997c483a605acab89d4b01f15986b28a1d73702c', NULL, NULL, '14e1a35395b8d24978e076ea3e863ed58ed314ed', NULL, 'billy', 'billy@aol.com', '2009-12-08 02:34:10', 'pending')[0m
+  [4;36;1mSQL (28.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (25.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'billy' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'billy@aol.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (30.3ms)[0m   [0;1mUPDATE `users` SET `activated_at` = '2009-12-08 02:34:10', `activation_code` = NULL, `state` = 'active', `updated_at` = '2009-12-08 02:34:10' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed in 541ms (DB: 127) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-07 18:34:10) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:34:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-07 18:34:54) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:34:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-07 18:35:06) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "action"=>"create", "authenticity_token"=>"dQOaW9y0QzUQatMqrfiNP6MqlNWlr7WC6WDwQ4sacXI=", "controller"=>"sessions", "login"=>"billy", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (8.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'billy') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed in 28ms (DB: 11) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-07 18:35:06) [GET]
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) LIMIT 1[0m
+  [4;36;1mMessage Columns (21.6ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mMessage Load (12.3ms)[0m   [0mSELECT * FROM `messages` WHERE (`messages`.`recipient` = 4) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering messages/index
+Rendered messages/_inbox_list (3.2ms)
+Completed in 141ms (View: 62, DB: 44) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-12-07 18:35:11) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-07 18:35:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
