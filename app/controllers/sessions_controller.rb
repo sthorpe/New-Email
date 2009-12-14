@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
   
   # render new.rhtml
   def new
-    render :layout => false 
   end
 
   def create
